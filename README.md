@@ -122,22 +122,6 @@ To process a raw CR3 image using the final function:
 process_raw("input.CR3", "output.jpg")
 ```
 
----
-
-## Repository Structure
-
-```text
-.
-├── Ex-2-Solution.ipynb
-├── README.md
-├── results/
-│   ├── demosaiced_image.jpg
-│   ├── gamma_corrected_image.jpg
-│   ├── simple_hdr.jpg
-│   ├── tone_mapped_image.jpg
-│   └── final_processed_image.jpg
-└── requirements.txt
-```
 
 ---
 
