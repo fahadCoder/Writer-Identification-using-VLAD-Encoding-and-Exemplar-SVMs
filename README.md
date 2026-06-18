@@ -173,16 +173,18 @@ Top-1 accuracy: X.XX - mAP: X.XX
 
 ## Results
 
-| Method | Top-1 Accuracy | mAP |
-|---|---:|---:|
-| VLAD | TODO |
-| VLAD + Power Normalization | TODO |
-| VLAD + Exemplar SVM | TODO |
-| VLAD + GMP | TODO |
-| Multi-VLAD + PCA Whitening | TODO |
-| Multi-VLAD + PCA Whitening + Exemplar SVM | TODO |
+## Results
 
-> Replace the `TODO` values with the actual results printed after running the experiments.
+| Experiment          | Options                                                        |       Top-1 |         mAP | Top-1 after Exemplar SVMs | mAP after Exemplar SVMs |
+| ------------------- | -------------------------------------------------------------- | ----------: | ----------: | ------------------------: | ----------------------: |
+| Own SIFT (computed) | default VLAD                                                   |     0.82056 |     0.62995 |                   0.88111 |                 0.74187 |
+| Given descriptors   | default VLAD                                                   |     0.80583 |     0.61745 |                   0.87556 |                 0.73125 |
+| Baseline            | clusters 32 + power norm                                       |     0.83250 |     0.64483 |                   0.89778 |                 0.76466 |
+| GMP γ=1             | GMP, gamma 1, power norm                                       | **0.83861** | **0.65147** |               **0.90389** |             **0.77989** |
+| GMP γ=10            | GMP, gamma 10, power norm                                      |     0.83472 |     0.64765 |                   0.89833 |                 0.77238 |
+| GMP γ=100           | GMP, gamma 100, power norm                                     |     0.83139 |     0.64336 |                   0.89722 |                 0.76524 |
+| Multi-VLAD + PCA    | Multi-VLAD, codebooks 5, clusters 32, PCA dim 1000, power norm |           - |           - |                   0.89000 |                 0.74879 |
+
 
 ## What I Learned
 
