@@ -201,15 +201,7 @@ Key learning outcomes:
 - How Exemplar SVMs can produce more discriminative descriptors
 - How PCA whitening and multi-codebook VLAD can improve feature representation
 
-## Project Structure
-
-```text
-.
-├── Solution.py
-├── README.md
-└── results/
-    └── optional_result_logs.txt
-```
+`
 
 ## Future Improvements
 
@@ -219,9 +211,4 @@ Key learning outcomes:
 - Compare VLAD-based features with deep learning embeddings
 - Optimize the Exemplar SVM stage for faster execution
 
-## Author
 
-**Your Name**
-
-Computer Vision Project  
-Historical Writer Identification using VLAD Encoding and Exemplar SVMs
